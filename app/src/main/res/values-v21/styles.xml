@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="AppTheme" parent="AppTheme.Base">
+        <item name="android:windowContentTransitions">true</item>
+        <item name="android:windowAllowEnterTransitionOverlap">true</item>
+        <item name="android:windowAllowReturnTransitionOverlap">true</item>
+        <item name="android:windowSharedElementEnterTransition">@android:transition/move</item>
+        <item name="android:windowSharedElementExitTransition">@android:transition/move</item>
+
+        <!-- specify enter and exit transitions -->
+        <item name="android:windowEnterTransition">@android:transition/explode</item>
+        <item name="android:windowExitTransition">@android:transition/explode</item>
+
+    </style>
+
+    <!-- Ripple Styles-->
+    <style name="AppThemeBlue.CommonRoundedButton" parent="android:Widget.Button">
+        <item name="android:textSize">@dimen/common_button_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/common_rounded_button_ripple</item>
+    </style>
+
+    <style name="AppThemeBlue.CommonButton" parent="android:Widget.Button">
+        <item name="android:textSize">@dimen/common_button_text_size</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@drawable/common_button_ripple</item>
+    </style>
+
+</resources>

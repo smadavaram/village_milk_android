@@ -1,0 +1,434 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_light_grey"
+    >
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimaryDark">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/rlHeaderBar">
+
+            <ImageView
+                android:id="@+id/ivBackBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_back_button"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/abTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Add Subscription"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivBackBtn"
+                android:layout_marginLeft="15dp"
+                />
+
+
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+
+    <android.support.v7.widget.CardView
+        xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_view"
+        android:layout_below="@id/toolbar"
+        android:layout_gravity="center"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="70dp"
+        card_view:cardCornerRadius="0dp">
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/ivInfo"
+            android:layout_width="29dp"
+            android:layout_height="29dp"
+            android:src="@drawable/info_icon"
+            android:padding="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            />
+        <ImageView
+            android:id="@+id/im_productImage"
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="10dp"
+            />
+     <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_toRightOf="@id/im_productImage"
+         android:layout_marginLeft="10dp"
+         android:text="WARNA Milk Long Text"
+         android:layout_marginRight="33dp"
+        android:textColor="#333"
+        android:id="@+id/tv_productName"
+        android:layout_marginTop="12dp"
+        android:textSize="20dp"
+        />
+     <TextView
+        android:id="@+id/tv_productPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="RS.20"
+        android:textColor="#333"
+         android:layout_marginTop="12dp"
+         android:layout_toRightOf="@id/im_productImage"
+         android:layout_marginLeft="10dp"
+        android:layout_below="@id/tv_productName"
+        android:textSize="18dp"
+        />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="500mg"
+            android:textColor="@android:color/darker_gray"
+            android:id="@+id/tv_productUnit"
+            android:layout_toRightOf="@id/tv_productPrice"
+            android:layout_marginLeft="30dp"
+            android:layout_alignTop="@id/tv_productPrice"
+            android:textSize="18dp"
+            />
+
+    </RelativeLayout>
+
+        <TextView
+            android:id="@+id/abEnd"
+            android:layout_marginLeft="25dp"
+            android:layout_marginRight="25dp"
+            android:layout_marginTop="20dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="END SUBSCRIPTION"
+            android:textSize="18sp"
+            android:gravity="center"
+            android:background="@color/red"
+            />
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            >
+            <RadioGroup
+                android:id="@+id/rg_subscriptionType"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                >
+
+                <RadioButton
+                    android:id="@+id/radioEveryDay"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:textSize="28dp"
+                    android:button="@null"
+                    android:background="@drawable/custom_checkbox_selector"
+                    android:checked="true" />
+
+
+                <RadioButton
+                    android:id="@+id/radioAlternateDay"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="28dp"
+                    android:button="@null"
+                    android:background="@drawable/custom_checkbox_selector"/>
+                <RadioButton
+                    android:id="@+id/radioEvery2Day"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:textSize="28dp"
+                    android:layout_marginTop="10dp"
+                    android:button="@null"
+                    android:background="@drawable/custom_checkbox_selector"/>
+                <RadioButton
+                    android:id="@+id/radioTomorrow"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginTop="10dp"
+                    android:textSize="28dp"
+                    android:button="@null"
+                    android:background="@drawable/custom_checkbox_selector"
+                    />
+            </RadioGroup>
+
+            <Button
+                android:id="@+id/oneDayDate"
+                android:layout_width="140dp"
+                android:layout_height="32dp"
+                android:layout_weight="4"
+                android:textSize="15dp"
+                android:text="Pick the day"
+                android:contentDescription="Time"
+                android:layout_marginTop="5dp"
+                android:layout_toRightOf="@id/rg_subscriptionType"
+                android:layout_below="@id/rg_subscriptionType"
+                android:theme="@android:style/Theme.Holo.Light"
+                style="@style/TextAppearance.EditEvent_SpinnerButton"
+                />
+            <TextView
+                android:id="@+id/tvEveryday"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:text="Everyday"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:layout_alignTop="@id/rg_subscriptionType"
+                android:layout_toRightOf="@id/rg_subscriptionType"/>
+
+            <TextView
+                android:id="@+id/tvAltDay"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:text="Every alternate day"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@id/tvEveryday"
+                android:layout_toRightOf="@id/rg_subscriptionType"/>
+
+            <TextView
+                android:id="@+id/tvalt2day"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="11dp"
+                android:text="Every 3 days"
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@id/tvAltDay"
+                android:layout_toRightOf="@id/rg_subscriptionType"/>
+            <TextView
+                android:id="@+id/tvOnlyTomorrow"
+                android:layout_width="wrap_content"
+                android:layout_height="25dp"
+                android:layout_marginTop="11dp"
+                android:text="Only for one day."
+                android:gravity="center_vertical"
+                android:textColor="@color/black"
+                android:textSize="16dp"
+                android:paddingLeft="10dp"
+                android:layout_below="@id/tvalt2day"
+                android:layout_toRightOf="@id/rg_subscriptionType"/>
+        </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/llQuant"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvOnlyTomorrow"
+        android:layout_marginTop="15dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Quantity:"
+            android:textColor="@color/black"
+            android:visibility="gone"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@id/tv_productName"
+            android:textSize="18dp"
+            />
+
+        <Button
+            android:id="@+id/quantity_button"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:visibility="gone"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            android:text="0" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="11dp"
+                android:paddingLeft="20dp"
+                android:layout_marginBottom="8dp"
+                android:textColor="@color/zupp_grey_light"
+                />
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/btnMinus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="10dp"
+                    android:tint="@color/zupp_ab_yellow"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/minus"/>
+            <TextView
+                android:id="@+id/tvQuantity"
+                android:layout_width="60dp"
+                android:layout_height="40dp"
+                android:gravity="center"
+                android:layout_gravity="center_vertical"
+                android:background="@drawable/yellow_border"
+                android:text="1"/>
+                <ImageView
+                    android:id="@+id/btnPlus"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="10dp"
+                    android:tint="@color/zupp_ab_yellow"
+                    android:layout_gravity="center_vertical"
+                    android:src="@drawable/plus"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/llQuant"
+            android:id="@+id/start_date_layout"
+            android:layout_marginBottom="15dp"
+            >
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            android:id="@+id/start_date_layout2"
+            >
+
+            <TextView
+
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Start Date"
+                android:textSize="11dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/zupp_grey_light"
+                android:id="@+id/start_date_textview"
+                />
+
+            <Button
+                android:id="@+id/start_date_button"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_weight="4"
+                android:textSize="15dp"
+                android:contentDescription="Time"
+                android:layout_marginLeft="15dp"
+                android:theme="@android:style/Theme.Holo.Light"
+                style="@style/TextAppearance.EditEvent_SpinnerButton"
+               />
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="End Date"
+                android:textSize="11dp"
+                android:paddingLeft="20dp"
+                android:textColor="@color/zupp_grey_light"
+                android:id="@+id/end_date_text_view"
+                />
+            <Button
+                android:id="@+id/end_date_button"
+                android:layout_width="fill_parent"
+                android:layout_height="32dp"
+                android:layout_weight="4"
+                android:textSize="15dp"
+                android:text="Not Set"
+                android:contentDescription="Time"
+                android:layout_marginLeft="15dp"
+                android:theme="@android:style/Theme.Holo.Light"
+                style="@style/TextAppearance.EditEvent_SpinnerButton"
+                />
+        </LinearLayout>
+        </LinearLayout>
+
+
+    </LinearLayout>
+        </ScrollView>
+</android.support.v7.widget.CardView>
+    <Button
+        android:id="@+id/button_add_subscription"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:background="@color/zupp_ab_yellow"
+        android:textColor="@color/white"
+        android:layout_marginBottom="10dp"
+        android:textSize="15dp"
+        android:text="Save" />
+</RelativeLayout>

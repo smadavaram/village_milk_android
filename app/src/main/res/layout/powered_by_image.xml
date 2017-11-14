@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="8dp">
+
+    <LinearLayout
+        android:id="@+id/llAdd"
+        android:layout_width="96dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="@dimen/activity_gutter_margin"
+        android:orientation="horizontal"
+        android:background="@drawable/cart_quantity_modification_background">
+
+        <TextView
+            android:id="@+id/tvAdd"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/cart_quantity_modification_view_size"
+            android:gravity="center"
+            android:text="SUBSCRIBE"
+            android:textSize="16sp"
+            android:layout_margin="2dp"
+            android:textColor="@color/ninja_green"/>
+
+<!--
+        <ImageView
+            android:id="@+id/ivPoweredBy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="2dp"
+            android:srcCompat="@drawable/ic_promo_offers"/>
+-->
+
+    </LinearLayout>
+
+
+</LinearLayout>

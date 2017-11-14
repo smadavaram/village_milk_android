@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/colorPrimary">
+
+        </android.support.v7.widget.Toolbar>
+
+        <android.support.design.widget.TabLayout
+            android:id="@+id/tlCategories"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            app:tabPaddingBottom="-1dp"
+            app:tabPaddingEnd="-1dp"
+            app:tabPaddingStart="-1dp"
+            app:tabIndicatorHeight="2dp"
+            app:tabPaddingTop="-1dp"
+            android:layout_marginBottom="8dp"
+            app:tabMode="scrollable"/>
+
+        <com.idunnololz.widgets.AnimatedExpandableListView
+            android:id="@+id/listView"
+            android:background="@color/bg_light_grey"
+            android:layout_height="fill_parent"
+            android:dividerHeight="1dp"
+            android:groupIndicator="@null"
+            android:divider="@null"
+            android:childDivider="@null"
+            android:layout_width="match_parent">
+        </com.idunnololz.widgets.AnimatedExpandableListView>
+
+
+    </LinearLayout>
+
+</layout>

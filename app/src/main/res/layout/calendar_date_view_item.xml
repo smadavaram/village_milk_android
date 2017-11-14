@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="40dp"
+    android:paddingLeft="@dimen/activity_gutter_margin_quarter"
+    android:paddingRight="@dimen/activity_gutter_margin_quarter"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:id="@+id/tvDay"
+        android:layout_width="32dp"
+        android:layout_height="16dp"
+        android:gravity="center"
+        android:textAllCaps="true"
+        android:text="MON"
+        android:textSize="12sp"
+        android:textColor="@android:color/white"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/activity_gutter_margin_half"
+        android:layout_marginBottom="5dp"
+        android:gravity="center"
+        android:text="22"
+        android:textSize="14sp"
+        android:textColor="@android:color/white"/>
+
+    <ImageView
+        android:id="@+id/ivDot"
+        android:layout_width="5dp"
+        android:layout_height="5dp"
+        android:layout_gravity="center_horizontal"
+        android:src="@drawable/white_dot"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        />
+
+</LinearLayout>

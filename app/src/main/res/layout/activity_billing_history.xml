@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.BillingHistoryActivity">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/app_bar" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvBillingLogs"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/appBar"
+        android:layout_marginLeft="@dimen/activity_gutter_margin"
+        android:layout_marginRight="@dimen/activity_gutter_margin"
+        android:overScrollMode="always"
+        android:scrollbars="none">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:id="@+id/tvNoBillingHistory"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_gutter_margin"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="No Billing history found"
+        android:textSize="16sp"
+        android:textColor="@color/ninja_black"
+        android:visibility="gone"/>
+
+</RelativeLayout>

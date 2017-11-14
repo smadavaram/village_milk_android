@@ -1,0 +1,154 @@
+<resources>
+    <string name="app_name">Village Milk</string>
+
+    <!--Activity title Strings -->
+    <string name="title_activity_new_home"></string>
+    <string name="title_activity_new_sign_up">Sign Up</string>
+    <string name="title_activity_new_sign_in">Sign In</string>
+    <string name="title_activity_new_mobile_number">Enter phone number</string>
+    <string name="title_activity_new_building_list">Select your apartment</string>
+    <string name="title_activity_new_select_flat">Enter flat number</string>
+    <string name="title_activity_new_cart">Confirm Order</string>
+    <string name="title_activity_new_calendar">Schedule</string>
+    <string name="title_activity_billing_history">Billing History</string>
+
+    <string name="dialog_default_title">Here\'s a message!</string>
+    <string name="dialog_ok">OK</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="LOADING">Loading...</string>
+    <string name="GCM_SENDER_ID">455160319575</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <!--Network Strings-->
+    <string name="something_went_wrong">Something went wrong. Please try again later</string>v
+    <!--<string name="network_error">Network Error</string>-->
+    <string name="connection_error">Sorry! No internet connectivity. Please try later</string>
+    <string name="sorry_for_delay">SORRY FOR THE DELAY</string>
+    <string name="connection_error_alert_dialog">NO INTERNET CONNECTIVITY. PLEASE CHECK YOUR INTERNET CONNECTION</string>
+
+    <!--Update Dialog Strings-->
+    <string name="update_header">PLEASE UPDATE</string>
+    <string name="update_message">IT SEEMS THAT YOU HAVE THE OLD VERSION OF OUR APP. PLEASE UPDATE TO NEW VERSION SO WE CAN SERVE YOU BETTER</string>
+
+    <!--Notification Registration String-->
+    <string name="registration_failed">Notification registration failed</string>
+
+    <!--Validation Strings-->
+
+    <!--Miscellaneous Strings-->
+    <string name="facebook_sign_in_cancelled">Facebook Sign in cancelled by user</string>
+    <string name="success">Success</string>
+    <string name="fail">Fail</string>
+    <string name="no_sharing_available">No sharing available</string>
+
+
+    <string name="partnerKey">u2wHN44e70e5f7c8d41548abcda7ba474e7b2</string>
+
+    <!--API Keys-->
+    <string name="facebook_app_id">1793943767532563</string>
+    <string name="ACCOUNT_KIT_CLIENT_TOKEN">4a04206a012d8a6bccb97fd656df6445</string>
+
+    <!--Menu Strings-->
+    <string name="action_search">Search</string>
+    <string name="action_notifications">Notifications</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_header">Search buildings</string>
+    <string name="regiter_text">Register</string>
+    <string name="fill_address">Cannot find address</string>
+    <string name="message">Tell your address we will get back to you soon.....</string>
+    <string name="add_subscription">Add Subscription</string>
+    <string name="app_id">360336874157001</string>
+    <string name="fblogintext">Sign in With Facebook</string>
+    <string name="age">Age</string>
+    <string name="gender">Gender</string>
+    <string name="email">Email:</string>
+    <string name="mobile">Mobile</string>
+    <string name="mobile_hint">Mobile Number</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <!--966558170043287-->
+    <string name="openDrawer">Open</string>
+    <string name="closeDrawer">Close</string>
+    <string name="product_description">VillageMilk.in is an app to subscribe Milk and other farm based products from farmers directly. We are currently open in Gachibowli, Hitech city, Ayyappa Society, Jubilee Hills of Hyderabad. </string>
+    <string name="bill_info">Your bill gets updated everyday after your supplies have been delivered. You need to have a positive balance to ensure continued services.</string>
+    <string name="flash_info">Flash Sales are only for a limited time, till stocks last. Order now and get the product tomorrow.</string>
+    <string name="subscription_info">You can subscribe to an item to be delivered tomorrow before 12am. The item will be delivered to you between 6am and 8am, except for special productArrayList like Water Cans.</string>
+    <string name="pay_bill_now">You need to have a positive balance to ensure continued services, Please add money to your wallet now.</string>
+    <string name="thanks_subscription_normal">Thanks. You will receive the product as per schedule!</string>
+    <string name="network_error">Sorry! No internet connectivity. Please try later</string>
+    <string name="Subscription_ended">Your Subscription for the feature product has ended</string>
+    <string name="permission_get_accounts_rationale">Get Accounts permission is needed to Login via Google.</string>
+    <string name="permissions_not_granted">Permissions were not granted.</string>
+    <string name="title_activity_products_list">ProductsListActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="feedback_dialog_text">Your response hase been recorded. We will get back to you soon</string>
+
+    <string name="new_rate_dialog_title">Thank You!</string>
+    <string name="rate_dialog_message">We are very happy to hear that you love our services. It would be really helpful if you could Rate Us.</string>
+    <string name="new_rate_dialog_ok">Rate Us</string>
+    <string name="new_rate_dialog_later">Remind Me Later</string>
+    <string name="new_rate_dialog_never">No, Thanks</string>
+    <string name="txt_yo_yo">Yo Yo Yo</string>
+    <string name="position">position</string>
+    <string name="search_your_building">Search your building</string>
+
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Accept Related  -->
+    <string name="button_text_token">FETCH TOKEN</string>
+    <string name="invalid_card_number">Invalid Card Number</string>
+    <string name="invalid_month">Invalid Month</string>
+    <string name="two_digit_month">Two Digit Month Required</string>
+    <string name="invalid_year">Invalid Year</string>
+    <string name="invalid_cvv">Invalid CVV</string>
+    <string name="invalid_zipcode">Invalid Zipcode</string>
+    <string name="error">Error</string>
+    <string name="code">"Code: "</string>
+    <string name="extra_message">"Extra Message: "</string>
+    <string name="data_descriptor">"Data Descriptor :  "</string>
+    <string name="data_value">"Data Value:  "</string>
+    <string name="decision">"Decision: "</string>
+    <string name="token">"Token"</string>
+    <string name="cvv">CVV</string>
+    <string name="card_number">Card Number</string>
+    <string name="month">Month</string>
+    <string name="year">Year</string>
+    <string name="progress_message">Verifying Card Data...</string>
+    <string name="progress_title">Please Wait</string>
+
+
+    <!-- Android Pay specific -->
+    <string name="pay_with_google_button">Android Pay</string>
+    <string name="enter_amount">Enter Amount:</string>
+    <string name="title_activity_checkout">Checkout</string>
+    <string name="itemName">Item One</string>
+    <string name="title_activity_base">BaseActivity</string>
+
+
+    <string name="google_wallet_unavailable">Google Wallet is unavailable</string>
+    <string name="google_wallet_invalid_parameters">Invalid Parameters</string>
+    <string name="google_wallet_merchant_account_error">Merchant Account Error</string>
+    <string name="error_code">Error code: %d</string>
+    <string name="spending_limit_exceeded">You have exceeded your spending limit</string>
+    <string name="title_activity_confirmation">Confirmation</string>
+    <string name="title_activity_order_complete">Order Complete </string>
+    <string name="confirm_order">Confirm</string>
+    <string name="loading">Loading...</string>
+    <string name="gateway">gateway</string>
+
+    <string name="thanks_for_your_order">Transaction complete. Thank you</string>
+    <string name="confirmation_details">Confirmation details</string>
+    <string name="secured_by">Your transaction is Secured by</string>
+    <string name="confirmation_text">Your order confirmation number is ABC123.\n\nYour purchase will be shipped within two business days.</string>
+    <string name="credit_card_title">Credit Card</string>
+    <string name="return_to_shopping">Return to shopping</string>
+    <string name="pay_not_ready">Android Pay Not Ready</string>
+    <string name="set_it_up">Set it up using the Android Pay app, and you�ll be all set to pay with Authorize.net.</string>
+    <string name="item_price">Item price:</string>
+    <string name="item_name">Item name:</string>
+    <string name="zip_code_empty">Enter zip code</string>
+
+</resources>

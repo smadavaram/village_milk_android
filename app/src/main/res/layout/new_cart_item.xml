@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/llCart"
+    android:layout_width="match_parent"
+    android:layout_height="48dp"
+    android:orientation="horizontal"
+    android:clickable="true"
+    android:background="@color/ninja_green">
+
+    <RelativeLayout
+        android:id="@+id/rlBill"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_gutter_margin_half"
+        android:layout_weight="1">
+
+        <ImageView
+            android:id="@+id/ivCart"
+            android:layout_width="32dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="@dimen/activity_gutter_margin_half"
+            app:srcCompat="@drawable/ic_cart"/>
+
+        <TextView
+            android:id="@+id/tvCartAmount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/ivCart"
+            android:layout_marginLeft="@dimen/activity_gutter_margin"
+            tools:text="\u20B9 450"
+            android:textSize="14sp"
+            android:textColor="@android:color/white"/>
+
+        <TextView
+            android:id="@+id/tvCartQuantity"
+            android:layout_width="match_parent"
+            android:layout_height="16dp"
+            android:layout_below="@+id/tvCartAmount"
+            android:layout_alignLeft="@+id/tvCartAmount"
+            tools:text="10 subscriptionMasterList"
+            android:textSize="12sp"
+            android:textColor="@android:color/white"/>
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/rlCheckout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_gutter_margin_half"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tvCheckout"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_toLeftOf="@+id/ivProceed"
+            android:layout_marginRight="@dimen/activity_gutter_margin"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:text="Checkout"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"/>
+
+        <ImageView
+            android:id="@+id/ivProceed"
+            android:layout_width="16dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="@dimen/activity_gutter_margin_half"
+            android:layout_alignParentRight="true"
+            app:srcCompat="@drawable/ic_proceed"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

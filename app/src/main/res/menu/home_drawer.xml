@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:id="@+id/gp1">
+        <item
+            android:id="@+id/nav_my_subscriptions"
+            android:icon="@drawable/subscriprions"
+            android:title="My Subscriptions" />
+        <item
+            android:id="@+id/nav_my_calendar"
+            android:icon="@drawable/delivery_schedule"
+            android:title="My Delivery Schedule" />
+        <!--<item-->
+            <!--android:id="@+id/nav_my_profile"-->
+            <!--android:icon="@drawable/profile_icon"-->
+            <!--android:title="My Profile" />-->
+        <item
+            android:id="@+id/nav_billing_history"
+            android:icon="@drawable/billing_history"
+            android:title="My Billing History" />
+        <item
+            android:id="@+id/nav_payment_history"
+            android:icon="@drawable/payment_history"
+            android:title="My Payment History" />
+
+    </group>
+
+    <group android:id="@+id/gp2">
+        <item
+            android:id="@+id/nav_recharge_wallet"
+            android:icon="@drawable/dollar"
+            android:title="Recharge" />
+        <item
+            android:id="@+id/nav_refer_and_earn"
+            android:icon="@drawable/refer_earn"
+            android:title="Refer &amp; Earn"
+            android:visible="false"/>
+
+
+    </group>
+
+    <group android:id="@+id/gp3">
+            <item
+                android:id="@+id/nav_contact_us"
+                android:icon="@drawable/contact_us"
+                android:title="Contact Us" />
+            <item
+                android:id="@+id/nav_about_us"
+                android:icon="@drawable/about_us"
+                android:title="About Us" />
+
+    </group>
+
+</menu>

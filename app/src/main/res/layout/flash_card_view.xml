@@ -1,0 +1,56 @@
+<LinearLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/zupp_grey_light"
+        android:layout_marginTop="0dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/tvflashheader"
+            android:layout_width="fill_parent"
+            android:layout_height="35dp"
+            android:gravity="center_vertical"
+            android:paddingLeft="30dp"
+            android:background="@color/zupp_ab_yellow"
+            android:textColor="@color/black"
+            android:textSize="17dp"
+            android:text="Flash Sale"/>
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="5dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/flash_icon"/>
+
+        <ImageView
+            android:id="@+id/ivInfo2"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/info_icon"
+            android:padding="2dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1px"
+        android:background="@color/zupp_grey_light"
+        android:layout_marginTop="0dp"/>
+
+    <include
+        android:id="@+id/flashContent"
+        layout="@layout/flash_sale_item">
+    </include>
+</LinearLayout>

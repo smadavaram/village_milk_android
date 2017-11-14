@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.UserProfileActivity"
+    android:background="@android:color/white">
+
+    <include
+        android:id="@+id/appBar"
+        layout="@layout/app_bar" />
+
+    <TextView
+        android:id="@+id/tvCompleteRegistration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/activity_gutter_margin_double"
+        android:layout_marginLeft="@dimen/activity_gutter_margin_double"
+        android:layout_marginRight="@dimen/activity_gutter_margin_double"
+        android:gravity="center"
+        android:text="Add phone number and complete the registration"
+        android:textSize="16sp"
+        android:textColor="@color/light_gray_5"
+        android:visibility="gone"/>
+
+    <RelativeLayout
+        android:id="@+id/llEmail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar"
+        android:layout_marginTop="@dimen/activity_gutter_margin_double"
+        android:layout_marginLeft="@dimen/activity_gutter_margin"
+        android:layout_marginRight="@dimen/activity_gutter_margin">
+
+        <EditText
+            android:id="@+id/etEmail"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="40dp"
+            android:inputType="textEmailAddress"
+            android:hint="Enter email"
+            android:drawablePadding="@dimen/activity_gutter_margin"
+            style="@style/AppThemeOrange.RoundBorderEditText"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_email"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llEmail"
+        android:layout_marginTop="@dimen/activity_gutter_margin"
+        android:layout_marginLeft="@dimen/activity_gutter_margin"
+        android:layout_marginRight="@dimen/activity_gutter_margin">
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="40dp"
+            android:inputType="phone"
+            android:maxLength="10"
+            android:hint="Enter Name"
+            style="@style/AppThemeOrange.RoundBorderEditText"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_phone_number"/>
+
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/cardView"
+        layout="@layout/common_button_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginTop="@dimen/activity_gutter_margin_half"/>
+
+
+</RelativeLayout>

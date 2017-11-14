@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#333"
+        android:text="@string/message"
+        />
+    <EditText
+        android:id="@+id/new_address"
+        android:layout_width="300dp"
+        android:layout_marginTop="20dp"
+
+        android:layout_height="80dp"
+        android:ems="50"
+        android:windowSoftInputMode="adjustPan"
+        android:maxLines="3"
+        android:isScrollContainer="false"
+        >
+
+
+    </EditText>
+    <Button
+        android:id="@+id/dialogButtonOK"
+        android:layout_width="200px"
+        android:layout_height="wrap_content"
+        android:text=" Ok "
+        android:layout_marginTop="100dp"
+        android:layout_marginLeft="100dp"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="apptentive_dialog_title_text">@color/zupp_ab_yellow</color>
+    <color name="apptentive_dialog_button_negative_text">@color/black</color>
+    <color name="apptentive_dialog_button_positive_text">@color/black</color>
+
+
+</resources>

@@ -1,0 +1,54 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:gravity="center_vertical"
+    android:layout_height="wrap_content"
+    android:layout_width="fill_parent">
+
+    <RelativeLayout
+            android:layout_height="50dp"
+            android:layout_width="fill_parent"
+            android:background="@color/white">
+
+            <ImageView
+                android:id="@+id/imageView1"
+                android:layout_width="16dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/green_dot" />
+
+            <TextView
+                android:id="@+id/paid_date"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="62dp"
+                android:layout_marginTop="10dp"
+                android:visibility="gone"
+                android:text="Current Bill"
+                android:textSize="15dp"
+                android:textColor="@android:color/darker_gray"/>
+
+            <TextView
+                android:ellipsize="marquee"
+                android:fadingEdge="horizontal"
+                android:id="@+id/ruppes_value"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:singleLine="true"
+                android:text="RS 320"
+                android:layout_centerVertical="true"
+                android:textSize="25dp"
+                android:layout_marginLeft="50dp"/>
+
+            <!--<TextView-->
+                <!--android:id="@+id/start_end_date"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="62dp"-->
+                <!--android:layout_marginTop="65dp"-->
+                <!--android:visibility="invisible"-->
+                <!--android:text="From 1-May-2015"-->
+                <!--android:textColor="@android:color/darker_gray"/>-->
+
+        </RelativeLayout>
+
+  </RelativeLayout>

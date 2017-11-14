@@ -1,0 +1,295 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:clickable="true"
+    android:background="@color/white"
+    >
+
+  <android.support.v7.widget.Toolbar
+      android:id="@+id/toolbar"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:background="@color/colorPrimary"
+      android:title="Authorize.net"/>
+
+  <LinearLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:orientation="horizontal"
+      android:padding="8dp"
+      android:weightSum="1"
+      android:background="@color/colorPrimary">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Authorize.net"
+        android:textSize="16sp"
+        android:layout_weight="0.99"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Total $5.00"
+        android:layout_weight="0.01"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        />
+
+
+  </LinearLayout>
+
+  <android.support.v4.widget.NestedScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+      <LinearLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:orientation="horizontal"
+          android:padding="16dp"
+          android:gravity="center">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginRight="8dp"
+            android:text="We accept"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="60dp"
+            android:scaleType="fitStart"
+            android:src="@drawable/creditcards"/>
+
+
+
+
+      </LinearLayout>
+
+
+      <RelativeLayout
+          android:id="@+id/keyed_card_details_relative_layout"
+          android:layout_width="match_parent"
+          android:layout_height="0dp"
+          android:layout_marginBottom="16dp"
+          android:layout_weight="7"
+          android:background="@color/white"
+          android:gravity="center_horizontal"
+          >
+
+        <LinearLayout
+            android:id="@+id/card_details_relative_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="16dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:orientation="vertical"
+            android:paddingTop="4dp"
+            >
+
+          <LinearLayout
+              android:id="@+id/card_holder_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_credit_card_grey600_36dp"
+                android:tint="@color/background_light_blue"
+                />
+            <EditText
+                android:id="@+id/card_holder_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint= "Name of Card Holder"
+                android:imeOptions="actionNext"
+                android:maxLines="1"
+                android:inputType="text"
+                android:nextFocusDown="@+id/date_month_view"
+                android:textSize="20sp"
+                />
+          </LinearLayout>
+
+
+          <LinearLayout
+              android:id="@+id/card_number_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              >
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_credit_card_grey600_36dp"
+                android:tint="@color/background_light_blue"
+                />
+            <EditText
+                android:id="@+id/card_number_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/card_number"
+                android:imeOptions="actionNext"
+                android:maxLength="19"
+                android:inputType="number"
+                android:nextFocusDown="@+id/date_month_view"
+                android:textSize="20sp"
+                />
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/date_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/card_number_layout"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_today_grey600_36dp"
+                android:tint="@color/background_light_blue"
+                />
+
+            <EditText
+                android:id="@+id/date_month_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/month"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="2"
+                android:nextFocusDown="@+id/date_year_view"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/date_year_view"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/year"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="2"
+                android:nextFocusDown="@+id/security_code_view"
+                android:textSize="20sp"
+                />
+          </LinearLayout>
+
+          <LinearLayout
+              android:id="@+id/security_layout"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/date_layout"
+              android:gravity="center_vertical"
+              android:orientation="horizontal"
+              >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/ic_lock_outline_grey600_36dp"
+                android:tint="@color/background_light_blue"
+                />
+
+            <EditText
+                android:id="@+id/security_code_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="@string/cvv"
+                android:imeOptions="actionNext"
+                android:inputType="number"
+                android:maxLength="3"
+                android:maxLines="1"
+                android:nextFocusDown="@+id/zip_code_view"
+                android:textSize="20sp"
+                />
+
+            <EditText
+                android:id="@+id/zip_code_view"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:hint="Zip Code"
+                android:imeOptions="actionDone"
+                android:inputType="number"
+                android:maxLength="5"
+                android:visibility="visible"
+                android:nextFocusDown="@+id/security_code_view"
+                android:textSize="20sp"
+                />
+
+
+          </LinearLayout>
+
+          <TextView
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:text="We do not save your info"
+              android:layout_marginTop="40dp"
+              android:textSize="15sp"
+              android:textColor="@color/secondary_text"
+              android:gravity="center"/>
+
+          <LinearLayout
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_below="@+id/security_layout"
+              android:layout_marginTop="10dp"
+              android:gravity="center"
+              android:orientation="horizontal"
+              >
+
+            <Button
+                android:id="@+id/button_checkout_order"
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:background="@drawable/rounded_button1"
+                android:imeOptions="actionDone"
+                android:text="PAY Now"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+          </LinearLayout>
+
+        </LinearLayout>
+
+      </RelativeLayout>
+
+      <include layout="@layout/layout_response_token"
+          android:visibility="gone"></include>
+
+    </LinearLayout>
+
+
+  </android.support.v4.widget.NestedScrollView>
+
+
+</LinearLayout>

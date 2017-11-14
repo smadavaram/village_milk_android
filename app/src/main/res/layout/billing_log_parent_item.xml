@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="@dimen/activity_gutter_margin"
+    android:background="@android:color/white">
+
+    <ImageView
+        android:id="@+id/ivBillingLog"
+        android:layout_width="32dp"
+        android:layout_height="32dp"
+        android:layout_marginTop="@dimen/activity_gutter_margin_half"
+        android:layout_marginLeft="@dimen/activity_gutter_margin"
+        android:src="@drawable/cart"/>
+
+    <TextView
+        android:id="@+id/tvDate"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignTop="@+id/ivBillingLog"
+        android:layout_toRightOf="@+id/ivBillingLog"
+        android:layout_marginLeft="@dimen/activity_gutter_margin"
+        android:gravity="center"
+        tools:text="JULY 15, 2016"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/tvOpeningBalance"
+        android:layout_width="wrap_content"
+        android:layout_height="32dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/ivBillingLog"
+        android:layout_marginRight="@dimen/activity_gutter_margin"
+        android:paddingLeft="@dimen/activity_gutter_margin"
+        android:paddingRight="@dimen/activity_gutter_margin"
+        android:gravity="center"
+        tools:text="\u20B92016"
+        android:textSize="18sp"
+        android:textColor="@color/ninja_black"
+        android:background="@drawable/opening_balance_background"/>
+
+    <LinearLayout
+        android:id="@+id/llTransactions"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvDate"
+        android:layout_alignLeft="@+id/tvDate"
+        android:layout_marginTop="@dimen/activity_gutter_margin_half"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/viewSeparator"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/llTransactions"
+        android:layout_marginTop="@dimen/activity_gutter_margin_half"
+        android:layout_marginLeft="@dimen/activity_gutter_margin"
+        android:layout_margin="@dimen/activity_gutter_margin"
+        android:background="@color/separator_color"/>
+
+    <LinearLayout
+        android:id="@+id/llTransactionLogs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/viewSeparator"
+        android:layout_marginBottom="@dimen/activity_gutter_margin_half"
+        android:orientation="vertical">
+
+    </LinearLayout>
+
+</RelativeLayout>

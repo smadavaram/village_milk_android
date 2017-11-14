@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<android.support.v7.widget.CardView android:id="@+id/cvCheckoutItem"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardElevation="1dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:id="@+id/rlCheckoutItem"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/llCheckoutItem"
+        android:layout_margin ="8dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:weightSum="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/ivProduct"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:src="@color/ninja_black"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginRight="5dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/tvProductName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#333333"
+                    android:textSize="14sp"
+                    android:layout_marginBottom="4dp"
+                    />
+
+                <TextView
+                    android:id="@+id/tvProductQuantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#555555"
+                    android:textSize="12sp"
+                    android:layout_marginBottom="6dp"/>
+
+                <TextView
+                    android:id="@+id/tvProductUnitPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="14sp"
+                    android:textColor="#555555"/>
+
+
+            </LinearLayout>
+
+            <com.villagemilk.customviews.QuantityKnob
+                android:id="@+id/quantityKnob"
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="5dp"
+                app:type="0"/>
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tvSpecialText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:text="This is the special text"/>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/ninja_black_40"
+            android:visibility="gone"
+            android:alpha="0.5"/>
+
+        <com.villagemilk.customviews.FeedbackView
+            android:id="@+id/feedbackView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp">
+
+        </com.villagemilk.customviews.FeedbackView>
+
+
+    </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvStatus"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:gravity="center"
+            android:layout_width="90dp"
+            android:layout_marginTop="5dp"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:padding="3dp"
+            android:textSize="12sp"
+            android:alpha="0.8"
+            android:visibility="visible" />
+
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>
+

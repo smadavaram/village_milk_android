@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rootView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_gutter_margin_quarter">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="@dimen/activity_gutter_margin"
+        android:layout_marginTop="@dimen/activity_gutter_margin_half"
+        android:background="@android:color/white">
+
+        <ImageView
+            android:id="@+id/ivProduct"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/product_default"/>
+
+        <TextView
+            android:id="@+id/tvProductName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="24dp"
+            android:layout_toRightOf="@+id/ivProduct"
+            android:layout_marginLeft="@dimen/activity_gutter_margin"
+            android:layout_marginRight="112dp"
+            android:gravity="left|center_vertical"
+            android:text="Nescafe Coffee"
+            android:textSize="14sp"
+            android:textColor="@color/ninja_black"/>
+
+        <TextView
+            android:id="@+id/tvProductUnitSize"
+            android:layout_width="match_parent"
+            android:layout_height="24dp"
+            android:layout_below="@+id/tvProductName"
+            android:layout_alignLeft="@+id/tvProductName"
+            android:layout_alignRight="@+id/tvProductName"
+            android:gravity="left|center_vertical"
+            android:text="(500 gm)"
+            android:textSize="14sp"
+            android:textColor="@color/light_gray_2"/>
+
+        <TextView
+            android:id="@+id/tvProductUnitPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/tvProductUnitSize"
+            android:layout_alignLeft="@+id/tvProductName"
+            android:gravity="left|center_vertical"
+            android:text="\u20B9 250"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tvStrikePrice"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:layout_below="@+id/tvProductUnitSize"
+            android:layout_toRightOf="@+id/tvProductUnitPrice"
+            android:layout_marginLeft="@dimen/activity_gutter_margin"
+            android:gravity="left|center_vertical"
+            android:text="\u20B9 250"
+            android:textSize="16sp"
+            android:textColor="@color/light_gray_2"/>
+
+        <View
+            android:id="@+id/viewSeparator"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@+id/tvProductUnitPrice"
+            android:layout_marginTop="@dimen/activity_gutter_margin_half"
+            android:layout_marginBottom="@dimen/activity_gutter_margin_half"
+            android:background="@drawable/dashed_line"/>
+
+        <ImageView
+            android:id="@+id/ivPromotions"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/viewSeparator"
+            android:gravity="left|center_vertical"
+            android:src="@drawable/red_smiley" />
+
+        <TextView
+            android:id="@+id/tvSpecialText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:minHeight="20dp"
+            android:layout_below="@+id/viewSeparator"
+            android:layout_toRightOf="@+id/ivPromotions"
+            android:layout_marginLeft="@dimen/activity_gutter_margin"
+            android:gravity="left|center_vertical"
+            tools:text="Save 100"
+            android:textSize="14sp"
+            android:textColor="@color/light_gray_2"/>
+
+        <LinearLayout
+            android:id="@+id/llQuantityModification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/activity_gutter_margin"
+            android:orientation="horizontal"
+            android:background="@drawable/cart_quantity_modification_background">
+
+            <ImageView
+                android:id="@+id/ivSubtract"
+                android:layout_width="@dimen/cart_quantity_modification_view_size"
+                android:layout_height="@dimen/cart_quantity_modification_view_size"
+                app:srcCompat="@drawable/ic_subtract_green"/>
+
+            <TextView
+                android:id="@+id/tvProductQuantity"
+                android:layout_width="@dimen/cart_quantity_modification_view_size"
+                android:layout_height="@dimen/cart_quantity_modification_view_size"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="16sp"
+                android:textColor="@android:color/white"
+                android:background="@color/ninja_green"/>
+
+            <ImageView
+                android:id="@+id/ivAdd"
+                android:layout_width="@dimen/cart_quantity_modification_view_size"
+                android:layout_height="@dimen/cart_quantity_modification_view_size"
+                app:srcCompat="@drawable/ic_add_green" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llAdd"
+            android:layout_width="96dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/activity_gutter_margin"
+            android:orientation="horizontal"
+            android:background="@drawable/cart_quantity_modification_background">
+
+            <TextView
+                android:id="@+id/tvAdd"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/cart_quantity_modification_view_size"
+                android:gravity="center"
+                android:text="ADD"
+                android:textSize="16sp"
+                android:textColor="@color/ninja_green"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/ivSalePic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/banner_sale"/>
+
+</RelativeLayout>

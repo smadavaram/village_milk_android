@@ -1,0 +1,93 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="80dp"
+    android:layout_height="@dimen/calendar_box_height"
+    android:orientation="vertical" 
+    android:background="@drawable/cal_box_border"
+    >
+    
+    <RelativeLayout
+        android:id="@+id/rlDayBox"
+    android:layout_width="fill_parent"
+    android:layout_height="@dimen/calendar_box_height"
+    android:layout_centerInParent="true"
+    >
+    
+        <ImageView 
+            android:id="@+id/ivGreenDot"
+            android:layout_width="4dp"
+            android:layout_height="10dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginRight="2dp"
+            android:layout_alignParentRight="true"
+            android:contentDescription="abc"
+            android:src="@drawable/green_ticker_small"
+            android:scaleType="fitXY"
+            android:visibility="gone"
+            />
+        
+     <TextView 
+        android:id="@+id/tvDate"
+        android:layout_width="60dp"
+        android:layout_height="18dp"
+        android:text="1"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        />
+    
+    <TextView 
+        android:id="@+id/tvMonthInd"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/tvDate"
+        android:text="Aug"
+        android:textColor="@color/black"
+        android:textSize="12dp"
+        android:layout_marginBottom="1dp"
+        android:gravity="center"
+        android:visibility="visible"
+        android:layout_centerHorizontal="true"
+        />
+    
+    <LinearLayout 
+        android:id="@+id/llDots"
+        android:layout_width="wrap_content"
+        android:layout_height="4dp"
+        android:orientation="horizontal"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="4dp"
+        android:background="@android:color/transparent"
+        >
+        <ImageView
+        android:id="@+id/ivdotone"
+    android:layout_width="4dp"
+    android:layout_height="4dp"
+    android:background="@android:color/transparent"
+    android:scaleType="fitCenter"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp" />
+        <ImageView
+        android:id="@+id/ivdottwo"
+    android:layout_width="4dp"
+    android:layout_height="4dp"
+    android:scaleType="fitCenter"
+    android:background="@android:color/transparent"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp" />
+        <ImageView
+        android:id="@+id/ivdotthree"
+    android:layout_width="4dp"
+    android:layout_height="4dp"
+    android:scaleType="fitCenter"
+    android:background="@android:color/transparent"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp" />
+        
+    </LinearLayout>
+    
+    
+    
+</RelativeLayout>
+</RelativeLayout>

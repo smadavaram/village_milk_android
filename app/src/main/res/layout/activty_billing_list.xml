@@ -1,0 +1,94 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.Toolbar
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:minHeight="?attr/actionBarSize"
+        android:background="?attr/colorPrimary">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/rlHeaderBar">
+
+            <ImageView
+                android:id="@+id/ivBackBtn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/ic_back_button"
+                android:layout_centerVertical="true"
+                android:layout_alignParentLeft="true"
+                />
+
+            <TextView
+                android:id="@+id/abTitle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Payment History"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@id/ivBackBtn"
+                android:layout_marginLeft="15dp"
+                />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <ListView
+            android:id="@+id/listView_main"
+            android:layout_height="fill_parent"
+            android:background="@color/zupp_grey"
+            android:layout_marginBottom="40dp"
+            android:layout_width="fill_parent">
+        </ListView>
+
+        <TextView
+            android:id="@+id/tvNoPaymentHistory"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/activity_gutter_margin"
+            android:layout_centerInParent="true"
+            android:gravity="center"
+            android:text="No payment history found"
+            android:textSize="16sp"
+            android:textColor="@color/white"
+            android:visibility="gone"/>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/btnLogs"
+            android:background="@color/zupp_ab_yellow"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:text="View Billing History"
+            android:textSize="13dp"
+            android:layout_alignParentBottom="true"/>
+
+        <Button
+            android:layout_width="80dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="25dp"
+            android:id="@+id/btnPayments"
+            android:background="@color/zupp_ab_yellow"
+            android:textColor="@color/white"
+            android:visibility="visible"
+            android:layout_marginRight="10dp"
+            android:text="Recharge"
+            android:textSize="13dp"
+            android:layout_alignParentRight="true"/>
+    </RelativeLayout>
+</LinearLayout>

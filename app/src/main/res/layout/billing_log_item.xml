@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/activity_gutter_margin_quarter"
+    android:paddingBottom="@dimen/activity_gutter_margin_quarter">
+
+    <TextView
+        android:id="@+id/tvDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:layout_toLeftOf="@+id/tvAmount"
+        android:layout_marginLeft="@dimen/activity_gutter_margin"
+        android:gravity="left|center_vertical"
+        tools:text="Potato"
+        android:textSize="16sp"
+        android:textColor="@color/ninja_black" />
+
+    <TextView
+        android:id="@+id/tvAmount"
+        android:layout_width="64dp"
+        android:layout_height="wrap_content"
+        android:minHeight="20dp"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@+id/ivBillingLog"
+        android:layout_marginLeft="@dimen/activity_gutter_margin"
+        android:layout_marginRight="@dimen/activity_gutter_margin"
+        android:layout_centerVertical="true"
+        android:gravity="right|center_vertical"
+        tools:text="\u20B94561"
+        android:textSize="16sp"
+        android:textColor="@color/ninja_black" />
+
+</RelativeLayout>

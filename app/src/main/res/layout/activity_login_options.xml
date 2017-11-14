@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_new_login_options"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.LoginOptionsActivity"
+    android:background="@android:color/white">
+
+    <TextView
+        android:id="@+id/tvText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_gutter_margin_double"
+        android:gravity="center"
+        android:text="Delivering freshness daily  before 8 AM :)"
+        android:textSize="22sp"
+        android:textColor="@color/ninja_black_2"/>
+    
+    <ImageView
+        android:id="@+id/ivBackground"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvText"
+        android:background="@drawable/bg_login_options"/>
+
+    <ImageView
+        android:id="@+id/ivLoc"
+        android:layout_width="100dp"
+        android:layout_height="140dp"
+        android:layout_marginBottom="-30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignBottom="@+id/ivBackground"
+        android:background="@drawable/ic_location"/>
+
+    <ImageView
+        android:id="@+id/ivLoginPic"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_alignTop="@id/ivLoc"
+        android:layout_centerInParent="true"
+        android:adjustViewBounds="true"
+        android:layout_marginTop="20dp"/>
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:layout_marginLeft="@dimen/activity_gutter_margin_double"
+        android:layout_marginRight="@dimen/activity_gutter_margin_double"
+        android:layout_marginBottom="@dimen/activity_gutter_margin"
+        android:layout_above="@+id/rlGoogle">
+
+
+        <TextView
+            android:id="@+id/tvFacebook"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:gravity="center_vertical"
+            android:text="SIGN IN WITH FACEBOOK"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:paddingLeft="65dp"
+            android:drawablePadding="@dimen/activity_gutter_margin"
+            android:background="@drawable/bg_sign_in_with_facebook"/>
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_facebook"/>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlGoogle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llOptions"
+        android:layout_marginLeft="@dimen/activity_gutter_margin_double"
+        android:layout_marginRight="@dimen/activity_gutter_margin_double"
+        android:layout_marginBottom="@dimen/activity_gutter_margin_double"
+
+        >
+    <TextView
+        android:id="@+id/tvGoogle"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="SIGN IN WITH GOOGLE"
+        android:textSize="16sp"
+        android:textColor="@android:color/black"
+        android:paddingLeft="62dp"
+        android:drawablePadding="@dimen/activity_gutter_margin"
+        android:background="@drawable/bg_sign_in_with_google"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="10dp"
+            android:layout_centerVertical="true"
+            app:srcCompat="@drawable/ic_google"/>
+
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/llOptions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/activity_gutter_margin_double"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tvSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:text="SIGN IN"
+            android:textSize="16sp"
+            android:textColor="@color/ninja_blue_2"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_gutter_margin"
+            android:layout_marginRight="@dimen/activity_gutter_margin"
+            android:background="@android:color/black"/>
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="24dp"
+            android:gravity="center"
+            android:text="New User? SIGN UP HERE"
+            android:textSize="16sp"
+            android:textColor="@color/ninja_black_3"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

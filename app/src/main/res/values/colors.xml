@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="red">#ff0000</color>
+    <color name="green">#00ff00</color>
+    <color name="blue">#0000ff</color>
+    <color name="black">#000000</color>
+    <color name="actionbar_pressed"> #A01b5a7b</color>
+    <color name="theme_blue">#5498f4</color>
+    <color name="theme_blue_header_start">#106ceb</color>
+    <color name="theme_blue_header_end">#7baff6</color>
+    <color name="dashboard_blue">#80aae4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="grey">#8A8A8A</color>
+    <color name="button">#52a6ff</color>
+    <color name="background">#f8f8f8</color>
+    <color name="separator">#b9b9b9</color>
+    <color name="heading">#353535</color>
+    <color name="content">#353535</color>
+    <color name="textbox_hint">#CFCFCF</color>
+    <color name="button_text">#666666</color>
+    <color name="edit_text">#454444</color>
+    <color name="search_text_color">#1b6fe2</color>
+    <color name="stock_name">#2d2d2d</color>
+    <color name="price">#353535</color>
+    <color name="stock_id">#414141</color>
+    <color name="error_bg">#a30404</color>
+    <color name="detail_header">#1869D9</color>
+    <color name="detail_sep">#e4e3e3</color>
+	<color name="enq_detail_darker">#F8F8F8</color>
+	<color name="enq_list_buysell">#808080</color> 
+	<color name="enq_list_det">#353535</color>
+	<color name="enq_list_time">#82ade6</color>
+	<color name="btn_grad_start">#fdfdfd</color>
+	<color name="btn_grad_end">#f6f6f6</color>
+	<color name="enq_det_header_text">#27456e</color>
+	<color name="light_gray">#CFCFCF</color>
+	<color name="enq_list_add_menu">#b6d1f6</color>
+	<color name="pressed">#330066ff</color>
+	<color name="black_light">#D7D7D7</color>
+	<color name="black_transp">#BF000000</color>
+	<color name="white_transp">#BFFFFFFF</color>
+    <color name="yellow_transp">#BFFBB81D</color>
+    <color name="drawer_background">#333333</color>
+
+    <color name="today_highlight_color">#0033b5e5</color>
+    
+    <!-- TD -->
+    <color name="td_box_color">#394264</color>
+    <color name="td_box_color_alt">#616D95</color>
+    <color name="td_box_color_sel">#169bb2</color>
+    <color name="td_expander_color">#45d578</color>
+    <color name="td_month_bar_color">#FFDA5B</color>
+    <color name="td_list_drag_handle_color">#F3F3F3</color>
+    <color name="td_list_text_color">#5792B0</color>
+    <color name="td_list_day_bg">#D4D4D4</color>
+    
+    <!-- The app wide background color -->
+    <color name="background_color">#fafafa</color>
+    <color name="event_background">#ffc3d9ff</color>
+    <color name="panel_text_foreground">#ffffffff</color>
+    <color name="calendar_event_text_color">#ffFFFFFF</color>
+	<color name="calendar_separator">#E5E5E5</color>
+    <color name="event_right_sep">#E9E9E9</color>
+    <color name="cal_box_darker">#F8F8F8</color>
+    <color name="cal_box_text_darker">#898989</color>
+    
+    <!-- Event info colors -->
+    <color name="event_info_headline_color">#FFFFFFFF</color>
+    <color name="event_info_headline_transparent_color">#B3FFFFFF</color>
+    <color name="event_info_headline_link_color">#FFFFFFFF</color>
+    <color name="event_info_organizer_color">#FF666666</color>
+    <color name="event_info_description_color">#FF666666</color>
+    <color name="event_info_body_color">#FF666666</color>
+    <color name="event_info_label_color">#FF999999</color>
+    <color name="event_info_label_background_color">#FFDDDDDD</color>
+    <color name="edit_event_separator">#FFDDDDDD</color>
+
+
+    <color name="h_purple_dark">#120228</color>
+    <color name="h_blue_dark">#021342</color>
+
+    <color name="zupp_lighter_grey">#F2F2F2</color>
+    <color name="zupp_grey">#D9D9D9</color>
+    <color name="zupp_ab_bg_black">#262626</color>
+    <color name="zupp_ab_yellow">#00c853</color>
+    <color name="zupp_grey_headers">#EFEFEF</color>
+    <color name="zupp_grey_light">#B6B6B6</color>
+    <color name="dark_grey">#7A7A7A</color>
+
+    <!--<color name="colorPrimary">#000000</color>-->
+    <!--<color name="colorPrimaryDark">#233140</color>-->
+    <color name="colorSecondary">#e1b868</color>
+    <!--<color name="dark_grey">#7A7A7A</color>-->
+
+    <color name="light_black">#222222</color>
+    <color name="primary">#000000</color>
+    <color name="primary_dark">#000000</color>
+    <color name="primary_light">#FFECB3</color>
+    <color name="accent">#e1b868</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#212121</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="bg_light_grey">#eeeeee</color>
+    <color name="text_dark_grey">#757575</color>
+
+    <color name="text_color_dark">#414141</color>
+
+    <color name="black_text_color">#414141</color>
+
+    <color name="event_1">#b5d655</color>
+    <color name="event_2">#00a8b2</color>
+    <color name="event_3">#f38726</color>
+    <color name="event_4">#6c5488</color>
+    <color name="event_5">#dc7aa6</color>
+    <!--<color name="event_6">#da4936</color>-->
+    <!--<color name="event_5">#dc7aa6</color>-->
+
+    <!-- New Product Listing Colors -->
+    <color name="product_title_color">#1E2226</color>
+    <color name="product_unit_color">#B2B2B2</color>
+    <color name="product_count_green">#26C200</color>
+
+    <color name="flash_home_title">#1E2226</color>
+
+    <color name="app_bg">#2C3E50</color>
+
+    <color name="ninja_cream">#FFECCE</color>
+
+    <!--New Colors-->
+
+    <!--Theme Colors-->
+    <color name="colorPrimary">#03A9F4</color>
+    <color name="colorPrimaryDark">#0288D1</color>
+    <color name="colorPrimaryLt">#d1c4e9</color>
+    <color name="colorAccent">#039BE5</color>
+    <color name="colorBackground">#eeeeee</color>
+
+    <color name="ninja_yellow">#f9a915</color>
+    <color name="ninja_black">#1e2226</color>
+    <color name="ninja_black_40">#bbbcbd</color>
+    <color name="seperator">#60bbbcbd</color>
+    <color name="ninja_green">#00E676</color>
+    <color name="ninja_white">#fafafa</color>
+    <color name="ninja_orange">#fd6b09</color>
+    <color name="ninja_blue">#01dbf6</color>
+    <color name="promo_color">#feeccf</color>
+    <color name="ninja_black_2">#1b1b1b</color>
+    <color name="ninja_black_3">#222222</color>
+    <color name="ninja_blue_facebook">#4c66a4</color>
+    <color name="ninja_blue_2">#4a90e2</color>
+
+    <color name="light_gray_1">#bdcadb</color>
+    <color name="light_gray_2">#b2b2b2</color>
+    <color name="light_gray_3">#bcc9da</color>
+    <color name="light_gray_4">#aaaaaa</color>
+    <color name="light_gray_5">#a1a1a1</color>
+    <color name="light_gray_6">#828282</color>
+    <color name="light_gray_7">#1d1d26</color>
+
+    <color name="separator_color">#e8e8e8</color>
+    <color name="black_transparent">#99000000</color>
+
+    <color name="float_transparent">#00000000</color>
+    <color name="sweet_dialog_bg_color">#FFFFFF</color>
+    <color name="button_text_color">#FFFFFF</color>
+    <color name="gray_btn_bg_color">#B6B6B6</color>
+    <color name="gray_btn_bg_pressed_color">#9e9e9e</color>
+    <color name="blue_btn_bg_color">#AEDEF4</color>
+    <color name="blue_btn_bg_pressed_color">#96BFD2</color>
+    <color name="red_btn_bg_color">#DD6B55</color>
+    <color name="red_btn_bg_pressed_color">#CD5B55</color>
+    <color name="error_stroke_color">#F27474</color>
+    <color name="success_stroke_color">#A5DC86</color>
+    <color name="trans_success_stroke_color">#33A5DC86</color>
+    <color name="warning_stroke_color">#F8BB86</color>
+    <color name="text_color">#575757</color>
+    <color name="material_blue_grey_80">#ff37474f</color>
+    <color name="material_blue_grey_90">#ff263238</color>
+    <color name="material_blue_grey_95">#ff21272b</color>
+    <color name="material_deep_teal_20">#ff80cbc4</color>
+    <color name="material_deep_teal_50">#ff009688</color>
+
+
+  <color name="google_green">#FF0F9D58</color>
+  <color name="purple">#FFAA66CC</color>
+  <color name="orange">#FFFFBB33</color>
+  <color name="darkblue">#FF0099CC</color>
+  <color name="darkpurple">#FF9933CC</color>
+  <color name="darkgreen">#FF669900</color>
+  <color name="darkorange">#FFFF8800</color>
+  <color name="darkred">#FFCC0000</color>
+  <color name="very_lighter_gray">#DDD</color>
+  <color name="lighter_gray">#AAA</color>
+  <color name="darker_gray">#99000000</color>
+  <color name="visa_action_golden">#F9A714</color>
+
+  <color name="background_light_blue">#467FCF</color>
+  <color name="promo_background">#B1B7C1</color>
+  <color name="promo_item_label_color">#BBBBBB</color>
+  <color name="promo_item_label_background">#99444444</color>
+  <color name="wallet_details_color">#000000</color>
+  <color name="wallet_dark_grey">#666666</color>
+
+</resources>

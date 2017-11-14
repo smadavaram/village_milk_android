@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="36dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:background="@color/light_black">
+
+    <EditText
+        android:id="@+id/tvSearch"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_vertical"
+        android:layout_centerVertical="true"
+        android:hint="Search for productList"
+        android:imeOptions="actionGo"
+        android:textColorHint="@color/zupp_ab_yellow"
+        android:background="@android:color/transparent"
+        android:textSize="15sp"
+        android:textColor="@color/zupp_ab_yellow"/>
+
+    <ImageView
+        android:id="@+id/ivCancel"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        app:srcCompat="@drawable/ic_highlight_off_black_24dp"/>
+
+</RelativeLayout>

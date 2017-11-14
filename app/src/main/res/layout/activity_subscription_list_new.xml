@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <data>
+
+        <variable
+            name="viewModel"
+            type="com.villagemilk.viewmodel.SubscriptionListViewModel"/>
+
+
+    </data>
+
+    <android.support.design.widget.CoordinatorLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+        android:orientation="vertical" android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/colorPrimary"
+            app:titleTextColor="@android:color/white"
+            app:titleTextAppearance="@style/AppThemeBlue.Title"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/rvSubscriptionList"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp">
+
+
+        </android.support.v7.widget.RecyclerView>
+
+                <TextView
+                    android:id="@+id/tvEmpty"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:visibility="gone"
+                    android:gravity="center"
+                    android:textSize="18sp"
+                    android:text="No Subscriptions Found"/>
+
+    </LinearLayout>
+
+        <android.support.design.widget.FloatingActionButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            app:srcCompat = "@drawable/ic_add_white_24dp"
+            app:layout_anchor="@id/linearLayout"
+            android:layout_margin="20dp"
+            app:fabSize="normal"
+            android:visibility="gone"
+            app:setOnClickListener = "@{viewModel.addNewSubscriptions}"
+            app:backgroundTint="@color/ninja_green"
+            app:layout_anchorGravity="bottom|right"/>
+    </android.support.design.widget.CoordinatorLayout>
+
+
+</layout>

@@ -1,0 +1,121 @@
+<RelativeLayout android:layout_height="fill_parent"
+    android:layout_width="fill_parent"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation ="vertical"
+        android:id="@+id/x"
+        android:layout_above="@+id/llCart">
+
+        <android.support.v7.widget.Toolbar
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:minHeight="?attr/actionBarSize"
+            android:background="?attr/colorPrimary">
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:id="@+id/rlHeaderBar">
+
+                <ImageView
+                    android:id="@+id/ivBackBtn"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src="@drawable/ic_back_button"
+                    android:layout_centerVertical="true"
+                    android:layout_alignParentLeft="true" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_toRightOf="@+id/ivBackBtn"
+                    android:layout_toLeftOf="@+id/ivSearch"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/activity_horizontal_margin"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:paddingLeft="@dimen/activity_horizontal_margin"
+                    android:paddingRight="@dimen/activity_horizontal_margin"
+                    android:background="@color/white">
+
+                    <EditText
+                        android:id="@+id/etSearch"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center_vertical"
+                        android:layout_centerVertical="true"
+                        android:hint="Search"
+                        android:imeOptions="actionSearch"
+                        android:inputType="text"
+                        android:textColorHint="@color/product_unit_color"
+                        android:background="@android:color/transparent"
+                        android:textSize="15sp"
+                        android:textColor="@color/product_unit_color"/>
+
+                    <ImageView
+                        android:id="@+id/ivCancel"
+                        android:layout_width="24dp"
+                        android:layout_height="24dp"
+                        android:layout_alignParentRight="true"
+                        android:background="@drawable/cancel_btn_new"
+                        android:layout_centerVertical="true"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+
+                <ImageView
+                    android:id="@+id/ivSearch"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/activity_horizontal_margin"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_search"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.Toolbar>
+
+        <com.idunnololz.widgets.AnimatedExpandableListView
+            android:id="@+id/listView"
+            android:background="@color/bg_light_grey"
+            android:layout_below="@+id/toolbar"
+            android:layout_height="fill_parent"
+            android:dividerHeight="1dp"
+            android:divider="@color/light_gray"
+            android:layout_width="match_parent">
+
+        </com.idunnololz.widgets.AnimatedExpandableListView>
+
+        <RelativeLayout
+            android:id="@+id/rlNoProds"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/toolbar"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="No products found !"
+                android:layout_centerInParent="true"
+                android:textSize="18dp"/>
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/llCart"
+        layout="@layout/new_cart_item"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
